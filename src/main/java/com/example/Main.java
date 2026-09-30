@@ -53,7 +53,7 @@ public class Main {
         while (!classifica.isEmpty()) {
             String nomeVincitore = classifica.poll();
             switch (posizione) {
-                case 1 -> System.out.println("1° Posto (VINCITORE): " + nomeVincitore);
+                case 1 -> System.out.println("1° Posto: " + nomeVincitore);
                 case 2 -> System.out.println("2° Posto: " + nomeVincitore);
                 case 3 -> System.out.println("3° Posto: " + nomeVincitore);
                 default -> System.out.println("4° Posto: " + nomeVincitore);
