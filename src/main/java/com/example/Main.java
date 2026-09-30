@@ -13,7 +13,7 @@ public class Main {
         ThreadCavallo fannyValentine = new ThreadCavallo(t, "d4c", 100, "Fanny Valentine");
         ThreadCavallo johnnyJoestar = new ThreadCavallo(t, "task", 100, "Johnny Joestar");
         ThreadCavallo jairoZeppeling = new ThreadCavallo(t, "spin", 90, "Jairo Zeppeling");
-        ThreadCavallo dioBrandoAlt = new ThreadCavallo(t, "The World", 85, "Dio Brando");
+        ThreadCavallo dioBrandoAlt = new ThreadCavallo(t, "The World", 85, "Dio Brando Alterego");
         ThreadCavallo hotPants = new ThreadCavallo(t, "Cream Starter", 95, "Hot Pants");
         ThreadCavallo mountainTim = new ThreadCavallo(t, "Oh! Lonesome Me", 100, "Mountain Tim");
         ThreadCavallo blackmore = new ThreadCavallo(t, "Catch the Rainbow", 100, "Blackmore");

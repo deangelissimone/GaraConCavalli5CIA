@@ -16,7 +16,7 @@ public class ThreadCavallo extends Thread {
     public void run() {
         Thread.currentThread().setName(nC);
 
-        // Il ciclo parte da 1 per contare correttamente i metri percorsi
+        // Il ciclo conta correttamente i metri incrementando di 10 a ogni passo
         for (int i = 0; i <= t; i += 10) {
             System.out.println("Tragitto del cavallo " + Thread.currentThread().getName() + ": " + i);
             try {
@@ -27,7 +27,9 @@ public class ThreadCavallo extends Thread {
         }
 
         System.out.println("Il cavallo " + Thread.currentThread().getName() + " è arrivato al traguardo");
-
-        Main.classifica.add(this.n);
+        
+        synchronized (Main.classifica) {
+            Main.classifica.add(this.n);
+        }
     }
 }
