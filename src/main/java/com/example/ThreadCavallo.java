@@ -28,6 +28,6 @@ public class ThreadCavallo extends Thread {
 
         System.out.println("Il cavallo " + Thread.currentThread().getName() + " è arrivato al traguardo");
 
-        Main.classifica.add(this.nC);
+        Main.classifica.add(this.n);
     }
 }
