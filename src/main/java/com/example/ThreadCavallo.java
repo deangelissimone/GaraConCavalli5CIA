@@ -10,8 +10,7 @@ public class ThreadCavallo extends Thread {
         this.n = nomeCavallo;
         this.s = sosta;
     }
-    
-    @Override
+
     public void run() {
         Thread.currentThread().setName(n);
         
