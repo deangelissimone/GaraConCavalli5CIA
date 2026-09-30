@@ -57,7 +57,7 @@ public class Main {
                 case 1 -> System.out.println("1° Posto: " + nomeVincitore);
                 case 2 -> System.out.println("2° Posto: " + nomeVincitore);
                 case 3 -> System.out.println("3° Posto: " + nomeVincitore);
-                default -> System.out.println("4° Posto: " + nomeVincitore);
+                default -> System.out.println(posizione + "° Posto: " + nomeVincitore);
             }
             posizione++;
 
