@@ -4,7 +4,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Main {
     static ConcurrentLinkedQueue<String> classifica = new ConcurrentLinkedQueue<>();
-    private static int t=1000;
+    private static int t = 1000;
+
     public static void main(String[] args) {
         System.out.println("Inizio corsa");
         ThreadCavallo diegoBrando = new ThreadCavallo(t, "scary Moster", 90);
@@ -13,10 +14,10 @@ public class Main {
         ThreadCavallo jairoZeppeling = new ThreadCavallo(t, "spin", 90);
         ThreadCavallo dioBrandoAlt = new ThreadCavallo(t, "The World", 85);
         ThreadCavallo hotPants = new ThreadCavallo(t, "Cream Starter", 95);
-        ThreadCavallo mountainTim = new ThreadCavallo(t, "Oh! Lonesome Me", 105);
+        ThreadCavallo mountainTim = new ThreadCavallo(t, "Oh! Lonesome Me", 100);
         ThreadCavallo blackmore = new ThreadCavallo(t, "Catch the Rainbow", 100);
         ThreadCavallo ringoRoadagain = new ThreadCavallo(t, "Mandom", 90);
-        ThreadCavallo pocoloco = new ThreadCavallo(t, "Hey Ya!", 75);
+        ThreadCavallo pocoloco = new ThreadCavallo(t, "Hey Ya!", 85);
 
         diegoBrando.start();
         fannyValentine.start();
@@ -48,7 +49,7 @@ public class Main {
 
         System.out.println("Classifica gara");
         int posizione = 1;
-        
+
         while (!classifica.isEmpty()) {
             String nomeVincitore = classifica.poll();
             switch (posizione) {
@@ -58,8 +59,8 @@ public class Main {
                 default -> System.out.println("4° Posto: " + nomeVincitore);
             }
             posizione++;
-        
+
         }
-        
+
     }
 }
