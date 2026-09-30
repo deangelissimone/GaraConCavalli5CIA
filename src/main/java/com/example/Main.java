@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Inizio corsa");
+        // ipotesi aggiuntiva: i cavalli sono diversi, quindi ci sono soste aggiuntive
         ThreadCavallo diegoBrando = new ThreadCavallo(t, "scary Moster", 90, "Diego Brando");
         ThreadCavallo fannyValentine = new ThreadCavallo(t, "d4c", 100, "Fanny Valentine");
         ThreadCavallo johnnyJoestar = new ThreadCavallo(t, "task", 100, "Johnny Joestar");
