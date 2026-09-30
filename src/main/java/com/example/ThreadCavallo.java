@@ -15,7 +15,7 @@ public class ThreadCavallo extends Thread {
         Thread.currentThread().setName(n);
         
         // Il ciclo parte da 1 per contare correttamente i metri percorsi
-        for (int i = 1; i <= t; i++) {
+        for (int i = 0; i <= t; i+=10) {
             System.out.println("Tragitto del cavallo " + Thread.currentThread().getName() + ": " + i);
             try {
                 Thread.sleep(s);

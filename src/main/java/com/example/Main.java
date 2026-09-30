@@ -3,13 +3,14 @@ package com.example;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Main {
-     static ConcurrentLinkedQueue<String> classifica = new ConcurrentLinkedQueue<>();
+    static ConcurrentLinkedQueue<String> classifica = new ConcurrentLinkedQueue<>();
+    private static int t=1000;
     public static void main(String[] args) {
         System.out.println("Inizio corsa");
-        ThreadCavallo diegoBrando = new ThreadCavallo(100, "scary Moster", 80);
-        ThreadCavallo fannyValentine = new ThreadCavallo(100, "d4c", 200);
-        ThreadCavallo johnnyJoestar = new ThreadCavallo(100, "task", 100);
-        ThreadCavallo jairoZeppeling = new ThreadCavallo(100, "spin", 90);
+        ThreadCavallo diegoBrando = new ThreadCavallo(t, "scary Moster", 80);
+        ThreadCavallo fannyValentine = new ThreadCavallo(t, "d4c", 200);
+        ThreadCavallo johnnyJoestar = new ThreadCavallo(t, "task", 100);
+        ThreadCavallo jairoZeppeling = new ThreadCavallo(t, "spin", 90);
 
        diegoBrando.start();
         fannyValentine.start();
